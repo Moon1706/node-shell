@@ -1,0 +1,29 @@
+project_name: node-shell
+release:
+  github:
+    owner: Tinkoff
+    name: node-shell
+builds:
+  - id: node-shell
+    goos:
+    - linux
+    - windows
+    - darwin
+    goarch:
+    - amd64
+    - "386"
+    - arm64
+    env:
+      - CGO_ENABLED=0
+      - GO111MODULE=on
+    main: main.go
+    ldflags: -s -w
+      -X github.com/Tinkoff/node-shell/pkg/version.version=
+archives:
+  - id: node-shell
+    builds:
+    - node-shell
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+    - goos: windows
+      format: zip
