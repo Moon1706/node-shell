@@ -19,9 +19,9 @@ However, ```kubectl debug``` currently lacks the flexibility to customize the po
 
 Manual installation via [krew](https://github.com/kubernetes-sigs/krew):
 
-1) Download the [latest release archive](https://github.com/Moon1706/node-shell/releases) for your os/arch via browser
+1) Download the `main` branch
 2) Go to repo root directory
-3) Install ```kubectl krew install --manifest=deploy/krew/plugin.yaml --archive=<ABSOLUTE-path-to-downloaded-archive>```
+3) Install ```kubectl krew install --manifest=krew/plugin.yaml```
 
 
 ## Quick Start
