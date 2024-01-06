@@ -1,60 +1,61 @@
+---
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
   name: node-shell
 spec:
-  version: "v0.1.4"
+  version: "v0.0.1"
   platforms:
-  - selector:
-      matchLabels:
-        os: linux
-        arch: amd64
-    uri: https://github.com/Tinkoff/node-shell/releases/download/v0.1.4/node-shell_linux_amd64.tar.gz
-    sha256: "4976c391fa503de877b2e888692d28a3d4b0789766c6a97edac9c05229d7ce8a"
-    files:
-    - from: "./node-shell"
-      to: "."
-    - from: LICENSE
-      to: "."
-    bin: "node-shell"
-  - selector:
-      matchLabels:
-        os: darwin
-        arch: amd64
-    uri: https://github.com/Tinkoff/node-shell/releases/download/v0.1.4/node-shell_darwin_amd64.tar.gz
-    sha256: "5409f6dc24624e4ba6f88e401561c6470ff2449505c64eca8960c14a958d36c1"
-    files:
-    - from: "./node-shell"
-      to: "."
-    - from: LICENSE
-      to: "."
-    bin: "node-shell"
-  - selector:
-      matchLabels:
-        os: darwin
-        arch: arm64
-    uri: https://github.com/Tinkoff/node-shell/releases/download/v0.1.4/node-shell_darwin_arm64.tar.gz
-    sha256: "73114f4d9a4d3b92d154064241addaa4e9f4475686963c9c3f241e593a0b98c7"
-    files:
-    - from: "./node-shell"
-      to: "."
-    - from: LICENSE
-      to: "."
-    bin: "node-shell"
-  - selector:
-      matchLabels:
-        os: windows
-        arch: amd64
-    uri: https://github.com/Tinkoff/node-shell/releases/download/v0.1.4/node-shell_windows_amd64.zip
-    sha256: "36efc8fc88091f95f770a8fb4f1218455e7f527140343706145c0f1ed060fa45"
-    files:
-    - from: "/node-shell.exe"
-      to: "."
-    - from: LICENSE
-      to: "."
-    bin: "node-shell.exe"
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/Moon1706/node-shell/releases/download/v0.0.1/node-shell_linux_amd64.tar.gz
+      sha256: "4976c391fa503de877b2e888692d28a3d4b0789766c6a97edac9c05229d7ce8a"
+      files:
+        - from: "./node-shell"
+          to: "."
+        - from: LICENSE
+          to: "."
+      bin: "node-shell"
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/Moon1706/node-shell/releases/download/v0.0.1/node-shell_darwin_amd64.tar.gz
+      sha256: "5409f6dc24624e4ba6f88e401561c6470ff2449505c64eca8960c14a958d36c1"
+      files:
+        - from: "./node-shell"
+          to: "."
+        - from: LICENSE
+          to: "."
+      bin: "node-shell"
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+      uri: https://github.com/Moon1706/node-shell/releases/download/v0.0.1/node-shell_darwin_arm64.tar.gz
+      sha256: "73114f4d9a4d3b92d154064241addaa4e9f4475686963c9c3f241e593a0b98c7"
+      files:
+        - from: "./node-shell"
+          to: "."
+        - from: LICENSE
+          to: "."
+      bin: "node-shell"
+    - selector:
+        matchLabels:
+          os: windows
+          arch: amd64
+      uri: https://github.com/Moon1706/node-shell/releases/download/v0.0.1/node-shell_windows_amd64.zip
+      sha256: "36efc8fc88091f95f770a8fb4f1218455e7f527140343706145c0f1ed060fa45"
+      files:
+        - from: "/node-shell.exe"
+          to: "."
+        - from: LICENSE
+          to: "."
+      bin: "node-shell.exe"
   shortDescription: A new plugin
-  homepage: https://github.com/Tinkoff/node-shell
+  homepage: https://github.com/Moon1706/node-shell
   caveats: |
     Usage:
       $ kubectl node-shell --debug-image=<debug-image> --nodename=<node-to-run-on>
