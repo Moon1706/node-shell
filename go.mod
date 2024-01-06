@@ -1,4 +1,4 @@
-module github.com/Tinkoff/node-shell
+module github.com/Moon1706/node-shell
 
 go 1.19
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	runshell "github.com/Tinkoff/node-shell/pkg/utils"
+	runshell "github.com/Moon1706/node-shell/pkg/utils"
 	"github.com/spf13/pflag"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/cli-runtime/pkg/genericclioptions"

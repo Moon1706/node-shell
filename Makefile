@@ -7,7 +7,7 @@ test:
 
 .PHONY: bin
 bin: fmt vet
-	go build -o bin/node-shell github.com/Tinkoff/node-shell
+	go build -o bin/node-shell github.com/Moon1706/node-shell
 
 .PHONY: fmt
 fmt:
