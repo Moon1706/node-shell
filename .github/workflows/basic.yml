@@ -1,3 +1,4 @@
+---
 name: basic
 on:
   pull_request:
