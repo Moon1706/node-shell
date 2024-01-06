@@ -10,7 +10,7 @@ spec:
         matchLabels:
           os: linux
           arch: amd64
-      {{addURIAndSha "https://github.com/Moon1706/node-shell/releases/download/{{ .TagName }}/node-shell_linux_amd64.tar.gz" .TagName }}
+      {{addURIAndSha "https://github.com/Moon1706/node-shell/releases/download/{{ .TagName }}/node-shell_{{ .TagName }}_linux_amd64.tar.gz" .TagName }}
       files:
         - from: "./node-shell"
           to: "."
